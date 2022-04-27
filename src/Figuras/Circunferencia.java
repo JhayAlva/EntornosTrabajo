@@ -11,11 +11,7 @@ public class Circunferencia {
 
         while(option){            
             int opcion = 0;
-            System.out.println("0. Salir");
-            System.out.println("1. Cálculo del Radio");
-            System.out.println("2. Cálculo del Área");
-            System.out.println("3. Cálculo de la Longitud");
-            System.out.println("Seleccione para una opcion para calcular:");
+            Menu();
             opcion=sc.nextInt();
    
             switch (opcion) {
@@ -33,6 +29,14 @@ public class Circunferencia {
                     break;
             }
         }
+    }
+
+    public static void Menu() {
+        System.out.println("0. Salir");
+        System.out.println("1. Cálculo del Radio");
+        System.out.println("2. Cálculo del Área");
+        System.out.println("3. Cálculo de la Longitud");
+        System.out.println("Seleccione para una opcion para calcular:");
     }
 
     public static void calcularLongitud(double diametro) {
